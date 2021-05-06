@@ -17,9 +17,6 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     marginRight: '10px',
   },
-  containerBody: {
-    marginTop: '25px',
-  },
 }));
 
 const App = () => {
@@ -45,20 +42,20 @@ const App = () => {
         {/* NAVBAR END */}
 
             {/* BODY START */}
-              <Grid container>
+            <div>
+            <Grid container>
                 <Grid item xs={0} md={1} lg={2}>
                 </Grid>
                   <Grid item xs={12} md={10} lg={8}>
-                    <Container className={classes.containerBody}>
                       <Switch>
                           <Route path="/" exact><Home/></Route>
                           <Route path="/about"><About/></Route>
                       </Switch>
-                    </Container>
                   </Grid>
                 <Grid item xs={0} md={1} lg={2}>
                 </Grid>
               </Grid>
+            </div>
             {/* BODY END */}
 
 
